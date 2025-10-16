@@ -1,0 +1,278 @@
+<svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  <!-- central_circle -->
+    @keyframes central_circle_anim {
+      10% {
+        opacity: 100%;
+      }
+      85% {
+        opacity: 100%;
+      }
+      90% {
+        opacity: 0;
+      }
+    }
+
+    .central_circle {
+      opacity: 0;
+      animation: central_circle_anim 10s infinite ease;
+    }
+
+  <!-- a -->
+    @keyframes a_anim {
+      35% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 100%;
+      }
+      60% {
+        opacity: 100%;
+      }
+      65% {
+        opacity: 0;
+      }
+    }
+
+    .a {
+      opacity: 0;
+      animation: a_anim 10s infinite ease;
+    }
+
+  <!-- red_circle_anim -->
+    @keyframes red_circle_anim {
+      0% {
+        transform: translate(0%, 50%) rotate(0deg);
+      }
+      20% {
+        opacity: 0;
+        transform: translate(0%, 50%) rotate(0deg);
+      }
+      30% {
+        opacity: 100%;
+        transform: rotate(0deg) translateX(0) rotate(-90deg);
+      }
+      70% {
+        opacity: 100%;
+        transform: rotate(-360deg) translateX(0) rotate(-540deg);
+      }
+      85% {
+        opacity: 5%;
+      }
+      88% {
+        transform: translate(0%, 50%) rotate(0deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(0%, 50%) rotate(0deg);
+      }
+    }
+
+    .red_circle {
+      opacity: 0;
+      animation: red_circle_anim 10s infinite ease;
+      transform-origin: center center;
+    }
+
+  <!-- blue_circle_anim -->
+    @keyframes blue_circle_anim {
+      0% {
+        transform: translate(50%, 0%) rotate(0deg);
+      }
+      20% {
+        opacity: 0;
+        transform: translate(50%, 0%) rotate(0deg);
+      }
+      30% {
+        opacity: 100%;
+        transform: rotate(0deg) translateX(0) rotate(-90deg);
+      }
+      70% {
+        opacity: 100%;
+        transform: rotate(-360deg) translateX(0) rotate(-540deg);
+      }
+      85% {
+        opacity: 5%;
+      }
+      88% {
+        opacity: 0;
+        transform: translate(50%, 0%) rotate(0deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(50%, 0%) rotate(0deg);
+      }
+    }
+
+    .blue_circle {
+      opacity: 0;
+      animation: blue_circle_anim 10s infinite ease;
+      transform-origin: center center;
+    }
+
+  <!-- yellow_circle_anim -->
+    @keyframes yellow_circle_anim {
+      0% {
+        transform: translate(0%, -50%) rotate(0deg);
+      }
+      20% {
+        opacity: 0;
+        transform: translate(0%, -50%) rotate(0deg);
+      }
+      30% {
+        opacity: 100%;
+        transform: rotate(0deg) translateX(0) rotate(-90deg);
+      }
+      70% {
+        opacity: 100%;
+        transform: rotate(-360deg) translateX(0) rotate(-540deg);
+      }
+      85% {
+        opacity: 5%;
+      }
+      88% {
+        opacity: 0;
+        transform: translate(0%, -50%) rotate(0deg);
+      }
+      100% {
+        opacity: 0;
+        transform: translate(0%, -50%) rotate(0deg);
+      }
+    }
+
+    .yellow_circle {
+      opacity: 0;
+      animation: yellow_circle_anim 10s infinite ease;
+      transform-origin: center center;
+    }
+
+  <!-- green_circle_anim -->
+    @keyframes green_circle_anim {
+      0% {
+        transform: translate(-50%, 0%) rotate(0deg);
+      }
+      20% {
+        opacity: 0;
+        transform: translate(-50%, 0%) rotate(0deg);
+      }
+      30% {
+        opacity: 100%;
+        transform: rotate(0deg) translateX(0) rotate(-90deg);
+      }
+      70% {
+        opacity: 100%;
+        transform: rotate(-360deg) translateX(0) rotate(-540deg);
+      }
+      85% {
+        opacity: 5%;
+      }
+      88% {
+        opacity: 0;
+        transform: translate(-50%, 0%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, 0%) rotate(0deg);
+      }
+    }
+
+    .green_circle {
+      opacity: 0;
+      animation: green_circle_anim 10s infinite ease;
+      transform-origin: center center;
+    }
+
+  <!-- stick_anim -->
+    @keyframes stick_anim {
+      30% {
+        transform: rotate(0deg) translateX(0) rotate(-90deg);
+      }
+      35% {
+        opacity: 0;
+      }
+      40% {
+        opacity: 100%;
+      }
+      60% {
+        opacity: 100%;
+      }
+      65% {
+        opacity: 0;
+      }
+      70% {
+        transform: rotate(-360deg) translateX(0) rotate(-540deg);
+      }
+    }
+
+  <!-- red_stick_anim -->
+    .red_stick {
+      opacity: 0;
+      animation: stick_anim 10s infinite ease;
+      transform-origin: center center;
+    }
+
+  <!-- blue_stick_anim -->
+    .blue_stick {
+      opacity: 0;
+      animation: stick_anim 10s infinite ease;
+      transform-origin: center center;
+    }
+
+  <!-- yellow_stick_anim -->
+    .yellow_stick {
+      opacity: 0;
+      animation: stick_anim 10s infinite ease;
+      transform-origin: center center;
+    }
+
+  <!-- green_stick_anim -->
+    .green_stick {
+      opacity: 0;
+      animation: stick_anim 10s infinite ease;
+      transform-origin: center center;
+    }
+</style>
+<g id="Frame 5">
+<g id="Group 2">
+<g id="g154">
+<!-- blue_stick -->
+<path class="blue_stick" id="path156 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M30.0582 76.2449C30.8583 74.3586 29.9778 72.1808 28.0915 71.3807C19.284 67.6447 12.4192 60.1696 9.5581 50.9883C8.9485 49.0321 6.86851 47.9405 4.91232 48.5501C2.95612 49.1597 1.8645 51.2397 2.47411 53.1959C5.99431 64.492 14.4122 73.6382 25.194 78.2116C27.0803 79.0117 29.2581 78.1312 30.0582 76.2449Z" fill="#4077BB"/>
+</g>
+<g id="g158">
+<!-- red_stick -->
+<path class="red_stick" id="path160 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M5.79694 29.9697C7.67576 30.7872 9.86157 29.9268 10.6791 28.048C14.4895 19.2907 21.9021 12.4927 31.085 9.63108C33.0411 9.02147 34.1328 6.94148 33.5232 4.98529C32.9136 3.0291 30.8336 1.93748 28.8774 2.54708C17.5829 6.06676 8.52346 14.4048 3.87525 25.0875C3.05774 26.9663 3.91811 29.1522 5.79694 29.9697Z" fill="#E52D34"/>
+</g>
+<g id="g162">
+<!-- central_circle -->
+<path class="central_circle" id="path164" d="M40.9629 35.4715C44.0362 35.4715 46.5282 37.9635 46.5282 41.0368C46.5282 44.1102 44.0362 46.6008 40.9629 46.6008C37.8896 46.6008 35.3976 44.1102 35.3976 41.0368C35.3976 37.9635 37.8896 35.4715 40.9629 35.4715Z" fill="#2C4493"/>
+</g>
+<g id="g166">
+<!-- а -->
+<path class="a" id="path168 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M41.203 59.5117C42.2284 59.5106 43.2847 59.4172 44.2861 59.2173C46.2954 58.8161 47.5991 56.8621 47.198 54.8527C46.7968 52.8434 44.8428 51.5397 42.8334 51.9409C42.358 52.0358 41.7861 52.0917 41.1851 52.0917L41.1496 52.0919C35.3399 52.1476 30.3132 47.4566 29.9763 41.6498C29.6473 35.2502 34.7002 29.9811 41.0371 29.9811C45.0276 29.9811 48.1894 31.6608 50.4295 35.2117C50.4345 35.2196 50.4373 35.2241 50.4423 35.2321C51.6274 37.1201 51.9444 38.7476 51.9444 40.7391V54.5404C51.9444 56.5894 53.6055 58.2504 55.6544 58.2504C57.7034 58.2504 59.3644 56.5894 59.3644 54.5404V40.7391C59.3644 37.5423 58.5481 34.1651 56.7158 31.2697C53.4802 26.0989 47.7276 22.5611 41.0371 22.5611C30.4597 22.5611 22.0104 31.3855 22.5668 42.0458L22.5678 42.0641C23.126 51.8285 31.442 59.5958 41.203 59.5117Z" fill="#2C4493"/>
+</g>
+<g id="g170">
+<!-- yellow_stick -->
+<path class="yellow_stick" id="path172 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M48.4099 77.1855C49.0325 79.1376 51.1197 80.2154 53.0718 79.5928C64.3456 75.9974 73.4013 67.67 78.0504 56.9851C78.8679 55.1063 78.0076 52.9205 76.1287 52.103C74.2499 51.2855 72.0641 52.1458 71.2466 54.0247C67.4371 62.7798 60.0208 69.5884 50.8173 72.5236C48.8652 73.1462 47.7874 75.2334 48.4099 77.1855Z" fill="#FAB500"/>
+</g>
+<g id="g174">
+<!-- green_stick -->
+<path class="green_stick" id="path176 (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M77.0139 33.5966C78.9701 32.987 80.0617 30.907 79.4521 28.9508C75.937 17.6712 67.605 8.51929 56.8896 3.93914C55.0055 3.13382 52.8253 4.00833 52.02 5.89241C51.2147 7.77649 52.0892 9.95668 53.9732 10.762C62.6978 14.4912 69.5018 21.9606 72.3681 31.1584C72.9777 33.1146 75.0577 34.2062 77.0139 33.5966Z" fill="#00A143"/>
+</g>
+<g id="g178">
+<!-- red_circle -->
+<path class="red_circle" id="path180" d="M40.9629 0.672773C43.0122 0.672773 44.6722 2.33411 44.6722 4.38211C44.6722 6.43144 43.0122 8.09277 40.9629 8.09277C38.9135 8.09277 37.2535 6.43144 37.2535 4.38211C37.2535 2.33411 38.9135 0.672773 40.9629 0.672773Z" fill="#E52D34"/>
+</g>
+<g id="g182">
+<!-- blue_circle -->
+<path class="blue_circle" id="path184" d="M4.30931 37.3265C6.35864 37.3265 8.01864 38.9878 8.01864 41.0358C8.01864 43.0851 6.35864 44.7465 4.30931 44.7465C2.25998 44.7465 0.599976 43.0851 0.599976 41.0358C0.599976 38.9878 2.25998 37.3265 4.30931 37.3265Z" fill="#4077BB"/>
+</g>
+<g id="g186">
+<!-- green_circle -->
+<path class="green_circle" id="path188" d="M77.6164 37.3265C79.6657 37.3265 81.3257 38.9878 81.3257 41.0358C81.3257 43.0851 79.6657 44.7465 77.6164 44.7465C75.567 44.7465 73.907 43.0851 73.907 41.0358C73.907 38.9878 75.567 37.3265 77.6164 37.3265Z" fill="#00A143"/>
+</g>
+<g id="g190">
+<!-- yellow_circle -->
+<path class="yellow_circle" id="path192" d="M40.9629 73.98C43.0122 73.98 44.6722 75.6414 44.6722 77.6894C44.6722 79.7387 43.0122 81.4 40.9629 81.4C38.9135 81.4 37.2535 79.7387 37.2535 77.6894C37.2535 75.6414 38.9135 73.98 40.9629 73.98Z" fill="#FAB500"/>
+</g>
+</g>
+</g>
+</svg>

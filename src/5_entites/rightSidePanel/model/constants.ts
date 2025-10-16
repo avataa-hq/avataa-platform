@@ -1,0 +1,1 @@
+export const DEFAULT_DRAWER_MIN_WIDTH = 320;

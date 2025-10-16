@@ -1,0 +1,12 @@
+Dockerfile
+
+*.ico
+*.png
+*.jpeg
+*.ttf
+*.svg
+*.txt
+*.tsbuildinfo
+/config
+/local_modules
+/node_modules

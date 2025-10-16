@@ -1,0 +1,63 @@
+name: avataa-platform
+
+# x-logging: &logging
+#   logging:
+#     driver: loki
+#     options:
+#       loki-url: http://localhost:3100/loki/api/v1/push
+#       loki-external-labels: job=dockerlogs,owner=avataa,environment=${PLATFORM_PROJECT_NAME:?}
+
+x-logging: &logging
+  logging:
+    options:
+      max-size: 100m
+
+
+x-networks: &networks
+  networks:
+    - avataa-platform
+
+x-restart: &restart
+  restart: always
+
+networks:
+  avataa-platform:
+    external: true
+
+
+services:
+
+  web:
+    <<: [*logging, *networks, *restart]
+    image: ${REGISTRY_URL:?}/${PLATFORM_PROJECT_NAME:?}/avataa-platform:${WEB_VERSION:?}
+    container_name: web
+    command: >
+      bash -c "yarn build &&
+        yarn preview --outDir build --host 0.0.0.0 --port 3000"
+    # ports:
+    #   - "3000:3000"
+    expose:
+      - "3000"
+    healthcheck:
+      test: ["CMD-SHELL", "bash -c ':> /dev/tcp/127.0.0.1/3000 || exit 1'"]
+      interval: 20s
+      timeout: 2s
+      retries: 30
+      start_period: 60s
+    hostname: platform
+    # deploy:
+    #   resources:
+    #     limits:
+    #       cpus: '8'
+    #       memory: 10000M
+    #     reservations:
+    #       cpus: '0.1'
+    #       memory: 200M
+
+  web-healthcheck:
+    <<: *networks
+    image: ${REGISTRY_URL:?}/${PLATFORM_PROJECT_NAME:?}/curl:${HEALTHCHECK_VERSION:?}
+    container_name: web-healthcheck
+    depends_on:
+      web:
+        condition: service_healthy

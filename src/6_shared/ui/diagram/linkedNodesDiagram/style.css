@@ -1,0 +1,9 @@
+.lnd_animated-dash-path {
+  animation: dashdraw 5s linear infinite;
+}
+
+@keyframes dashdraw {
+  to {
+    stroke-dashoffset: -50;
+  }
+}

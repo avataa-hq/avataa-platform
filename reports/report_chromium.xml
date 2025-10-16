@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="49.318" timestamp="2024-11-21T19:06:29.084857" hostname="DESKTOP-LQ9UG0B"><testcase classname="specs.test_inventory_page.TestColumnSettings" name="test_extend_sidebar_menu[chromium]" time="49.141" /></testsuite></testsuites>

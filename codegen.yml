@@ -1,0 +1,15 @@
+overwrite: true
+schema: 'https://avataa.dev/api/live_update/v1/graphql'
+documents: './src/**/*.graphql'
+generates:
+  ./src/6_shared/graphQL/types/graphqlTypes.ts:
+    plugins:
+      - typescript
+  ./src/6_shared/graphQL/types/:
+    preset: near-operation-file
+    presetConfig:
+      extension: .ts
+      baseTypesPath: graphqlTypes.ts
+    plugins:
+      - typescript-operations
+      - typescript-react-apollo

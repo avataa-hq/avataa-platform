@@ -1,0 +1,146 @@
+import { Subset } from 'types';
+import { CustomPalette } from './types';
+import themeDark from '../assets/theme/dark.svg';
+
+export const darkPalette: Subset<CustomPalette> = {
+  primary: {
+    main: '#0085FF',
+    light: '#69b4ff',
+    dark: '#0059cb',
+  },
+  secondary: {
+    main: '#eeeeee',
+  },
+  info: {
+    main: '#83899C',
+  },
+  error: {
+    main: '#EC0A40',
+  },
+  success: {
+    main: '#09CB05',
+  },
+  warning: {
+    main: '#FAB500',
+  },
+  text: {
+    primary: '#fff',
+  },
+  background: {
+    default: '#2D3551',
+    paper: '#1D399A1A',
+  },
+  action: {
+    active: '#0085FF1F',
+    hover: '#1A78D51F',
+    selected: '#2d355133',
+  },
+  neutral: {
+    surface: '#00000000',
+    surfaceContainerLowest: '#00000000',
+    surfaceContainerLowestVariant1: '#1D399A1A',
+    surfaceContainerLowestVariant2: '#2D355133',
+    surfaceContainerLow: '#1D399A1A',
+    surfaceContainerLowVariant1: '#2d355133',
+    surfaceContainerLowVariant2: '#2d355133',
+    surfaceContainer: '#2D355133',
+    surfaceContainerHigh: '#2D3551',
+    backdrop: '#0101011a',
+  },
+  neutralVariant: {
+    onSurface: '#FFFFFF',
+    onSurfaceVariant10: '#FFFFFF1A',
+    onSurfaceVariant20: '#FFFFFF33',
+    onSurfaceVariant50: '#FFFFFF80',
+    onSurfaceVariant60: '#FFFFFF99',
+    icon: '#4D627D',
+    iconDisabled: '#6E86A5',
+    outline: '#2D3551',
+    outlineVariant: '#2D3551',
+    outlineVariant20: '#2D3551',
+    outlineVariant30: '#404862',
+    tableBorder: '#515151',
+  },
+  common: {
+    blue: '#00A0FA',
+    black: '#000000',
+    white: '#FFFFFF',
+    orange: '#FA6900',
+    purple: '#4D33EB',
+    jungleGreen: '#31B267',
+    dodgerBlue: '#3261FF',
+    saffronYellow: '#F9C231',
+    brightGreen: '#5FF929',
+    lightDodgerBlue: '#31B1F9',
+    amaranthRed: '#EB333D',
+    royalBlue: '#6E59ED',
+    denimBlue: '#1883BF',
+    crustaOrange: '#F98531',
+    malachiteGreen: '#00C944',
+    flirtPurple: '#A90498',
+    javaBlue: '#17D3BD',
+    brilliantRose: '#EF66A8',
+  },
+  components: {
+    scrollBar: {
+      background: '#34373e',
+      thumbBackground: '#0085ff',
+      cornerBackground: '#00000000',
+    },
+    sidebar: {
+      background: '#1d399a1a',
+      text: '#ffffff',
+      activeText: '#0085FF',
+      outline: '#ffffff1f',
+      outlineVariant: '#ffffff1e',
+    },
+    map: {
+      surfaceContainer: '#2D355133',
+      outline: '#2D3551',
+      tooltipBackground: '#191919',
+      iconColor: '#ff8c68',
+      iconColor2: '#888888',
+      iconColor3: '#6386bd',
+      iconColor4: '#64de00',
+      border: '#267bc91a',
+      hover: '#1A78D51F',
+    },
+    chart: {
+      colors: [
+        '#4e79a7',
+        '#f28e2c',
+        '#e15759',
+        '#76b7b2',
+        '#59a14f',
+        '#edc949',
+        '#af7aa1',
+        '#ff9da7',
+        '#9c755f',
+        '#bab0ab',
+      ],
+      primary: '#36D5EB',
+      secondary: 'rgb(0,133,255)',
+      primaryLine: '#36D5EB',
+      primaryLineSurface: '#36d5eb33',
+      labelColor: '#FFFFFF',
+      labelBackdropColor: '#101B4099',
+      gridBorderColor: '#11172966',
+      gridColor: '#FFFFFF70',
+      tooltipBackgroundColor: '#2d3551d6',
+      backgroundColor: '#4077bb33',
+      ml: {
+        borderColor1: '#1ed6ff',
+        borderColor2: '#3DFFDC',
+        background: '#3dfffc4d',
+      },
+    },
+    reactFlow: {
+      nodeBackgroundStandard: '#c5e4eb',
+      nodeBackgroundSecondary: '#f2eded',
+      nodeBackgroundMain: '#a0d3f2',
+      flowChartBackground: '#F2F3F7',
+    },
+  },
+};
+
+export const BG_DARK_DEFAULT = themeDark;

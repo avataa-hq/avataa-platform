@@ -1,0 +1,18 @@
+subscription getSeverityAll ($filters: SeverityInput!) {
+    severity(filters: $filters) {
+        byFilters {
+            count,
+            filterName,
+            maxSeverity,
+        },
+        byRanges {
+            count,
+            filterName,
+            maxSeverity,
+        },
+      processes {
+          rows,
+          totalCount,
+      }
+    }
+}

@@ -1,0 +1,20 @@
+import styled from '@emotion/styled';
+import { Box } from '@mui/material';
+
+export const HistoryTableStyled = styled(Box)`
+  width: 100%;
+  height: 100%;
+`;
+
+export const Overlay = styled(Box)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  /* z-index: 100; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;

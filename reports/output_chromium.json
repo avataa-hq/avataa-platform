@@ -1,0 +1,63 @@
+[
+    {
+        "class_name": "TestColumnSettings",
+        "markers": "",
+        "file_name": "specs\\test_inventory_page",
+        "tests": [
+            {
+                "test_name": "test_extend_sidebar_menu",
+                "details": null,
+                "markers": "testrail_xxx",
+                "result": "PASSED",
+                "duration": 8.092204799999308,
+                "timestamp": "2024-11-21T19:07:16",
+                "message": null,
+                "test_steps": [
+                    {
+                        "step_name": "Prepare step - PASSED\n",
+                        "status": "",
+                        "actual": "",
+                        "expected": ""
+                    },
+                    {
+                        "step_name": "Step 1 - PASSED\n",
+                        "status": "",
+                        "actual": "",
+                        "expected": ""
+                    },
+                    {
+                        "step_name": "Step 2 - PASSED\n",
+                        "status": "",
+                        "actual": "",
+                        "expected": ""
+                    },
+                    {
+                        "step_name": "Step 3 - PASSED\n",
+                        "status": "",
+                        "actual": "",
+                        "expected": ""
+                    },
+                    {
+                        "step_name": "Step 4 - PASSED\n",
+                        "status": "",
+                        "actual": "",
+                        "expected": ""
+                    },
+                    {
+                        "step_name": "Step 5 - PASSED\n",
+                        "status": "",
+                        "actual": "",
+                        "expected": ""
+                    },
+                    {
+                        "step_name": "Step 6 - PASSED\n",
+                        "status": "",
+                        "actual": "",
+                        "expected": ""
+                    }
+                ],
+                "attachments": []
+            }
+        ]
+    }
+]

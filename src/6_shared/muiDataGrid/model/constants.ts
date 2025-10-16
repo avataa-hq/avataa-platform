@@ -1,0 +1,5 @@
+export const HAS_FILE = 'hasFile';
+export const COLUMN_GROUPING_DISABLED = 'COLUMN_GROUPING_DISABLED';
+export const ROW_GROUPING_COLUMN_PREFIX = '__row_group_by_columns_group_';
+export const STORED_INVENTORY_IMPORT_PREVIEW_FILE_NAME = 'INVENTORY_IMPORT_FILE_PREVIEW';
+export const DATA_GRID_ROW_HEIGHT = 42;

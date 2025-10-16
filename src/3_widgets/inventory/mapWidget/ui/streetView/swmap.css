@@ -1,0 +1,8 @@
+.sw-map-marker-custom-label {
+  transform: translateY(37px);
+  background: #ffffff;
+  color: #232323;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: -4px 6px 5px rgba(0, 0, 0, 0.3);
+}

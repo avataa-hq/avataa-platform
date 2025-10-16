@@ -1,0 +1,8 @@
+import styled from '@emotion/styled';
+import { Box } from '@mui/material';
+
+export const DataflowDiagramContainer = styled(Box)`
+  width: 100%;
+  height: 100%;
+  background-color: ${({ theme }) => theme.palette.neutral.surface};
+`;
